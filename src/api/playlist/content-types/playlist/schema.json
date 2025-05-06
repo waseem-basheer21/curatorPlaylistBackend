@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "playlists",
+  "info": {
+    "singularName": "playlist",
+    "pluralName": "playlists",
+    "displayName": "Playlist"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "mood": {
+      "type": "string",
+      "required": true
+    },
+    "song": {
+      "displayName": "song",
+      "type": "component",
+      "repeatable": true,
+      "component": "new.song",
+      "required": true
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "playlists"
+    }
+  }
+}

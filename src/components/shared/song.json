@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_songs",
+  "info": {
+    "displayName": "song",
+    "icon": "music"
+  },
+  "options": {},
+  "attributes": {
+    "SongTitle": {
+      "type": "string",
+      "required": true
+    },
+    "artist": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
